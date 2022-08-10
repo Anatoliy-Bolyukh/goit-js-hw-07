@@ -33,7 +33,7 @@ function onModalImg(even) {
             instance.close()
             document.removeEventListener('keydown', csoleEscape)
         }
-        console.log(even)
+
 
 
     }
