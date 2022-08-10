@@ -24,6 +24,8 @@ gallery.insertAdjacentHTML('beforeend', galleryItems
 gallery.addEventListener('click', onModalImg)
 function onModalImg(even) {
     even.preventDefault();
+    if (even.target.nodeName !== 'img'.toUpperCase()) return;
+
     document.addEventListener('keydown', csoleEscape)
 
     function csoleEscape(even) {
